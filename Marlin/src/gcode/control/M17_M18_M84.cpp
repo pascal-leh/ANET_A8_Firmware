@@ -54,10 +54,7 @@ inline stepper_flags_t selected_axis_bits() {
     | (parser.seen_test('Z')        << Z_AXIS),
     | (parser.seen_test(AXIS4_NAME) << I_AXIS),
     | (parser.seen_test(AXIS5_NAME) << J_AXIS),
-    | (parser.seen_test(AXIS6_NAME) << K_AXIS),
-    | (parser.seen_test(AXIS7_NAME) << U_AXIS),
-    | (parser.seen_test(AXIS8_NAME) << V_AXIS),
-    | (parser.seen_test(AXIS9_NAME) << W_AXIS)
+    | (parser.seen_test(AXIS6_NAME) << K_AXIS)
   );
   return selected;
 }
